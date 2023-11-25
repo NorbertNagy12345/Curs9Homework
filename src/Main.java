@@ -1,5 +1,7 @@
 import exercise1.Basket;
 import exercise1.Bouquet;
+import exercise1.Company;
+import exercise1.Person;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,5 +17,9 @@ public class Main {
         bouquet.add("Margaret");
         System.out.println(bouquet.getAll());
         bouquet.remove("Narcis");
+
+        Company company = new Company();
+        company.employ(new Person("Alex",23,"Worker"));
+        System.out.println(company.getPersons("Worker"));
     }
 }

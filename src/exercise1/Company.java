@@ -26,6 +26,7 @@ public class Company {
                 result.add(person);
             }
         }
+        System.out.println(result.get(0).getName());
         return result;
     }
 
@@ -46,6 +47,7 @@ public class Company {
                 result.add(person);
             }
         }
+        System.out.println(result);
         return result;
     }
 }
